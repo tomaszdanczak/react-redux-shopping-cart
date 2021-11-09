@@ -1,3 +1,10 @@
+import HomePage from "./components/pages/HomePage";
+import MainLayout from "./components/templates/MainLayout";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <MainLayout>
+      <HomePage />
+    </MainLayout>
+  );
 }
