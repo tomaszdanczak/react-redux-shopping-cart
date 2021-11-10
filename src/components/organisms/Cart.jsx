@@ -1,6 +1,7 @@
 import CartItems from "./CartItems";
 import { cartItems } from "./../../data.json";
 import ProceedOrder from "../molecules/ProceedOrder";
+import CheckoutForm from "./CheckoutForm";
 
 export default function Cart() {
   return (
@@ -8,6 +9,7 @@ export default function Cart() {
       <p className="mb-4 pb-4 border-b border-gray-500">{`You have ${cartItems.length} in the cart.`}</p>
       <CartItems />
       <ProceedOrder />
+      <CheckoutForm />
     </div>
   );
 }
