@@ -1,7 +1,7 @@
 // ===============================================================
 
 export const formatCurrency = (num) => {
-  return "$" + Number(num.toFixed(1)).toLocaleString() + "";
+  return "$" + Number(parseInt(num).toFixed(1)).toLocaleString() + "";
 };
 
 // ===============================================================
