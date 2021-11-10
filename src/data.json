@@ -80,5 +80,115 @@
       "__v": 0,
       "count": 6
     }
+  ],
+  "orders": [
+    {
+      "_id": "9jfU907ZM",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 14.9,
+      "cartItems": [
+        {
+          "_id": "ffV63oW5c",
+          "title": "Midi dress in pink ditsy floral",
+          "price": 14.9,
+          "count": 1
+        }
+      ],
+      "createdAt": "2021-11-05T13:38:46.501Z",
+      "updatedAt": "2021-11-05T13:38:46.501Z",
+      "__v": 0
+    },
+    {
+      "_id": "D8YLr7u2Z",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 229.5,
+      "cartItems": [
+        {
+          "_id": "03ECiArpI",
+          "title": "Midi sundress with shirring detail",
+          "price": 29.9,
+          "count": 1
+        },
+        {
+          "_id": "Ts3TQyHNi",
+          "title": "Midi tea dress in blue and red spot",
+          "price": 49.9,
+          "count": 4
+        }
+      ],
+      "createdAt": "2021-11-05T13:52:06.606Z",
+      "updatedAt": "2021-11-05T13:52:06.606Z",
+      "__v": 0
+    },
+    {
+      "_id": "kPqK7WQEr",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 52.699999999999996,
+      "cartItems": [
+        {
+          "_id": "ffV63oW5c",
+          "title": "Midi dress in pink ditsy floral",
+          "price": 14.9,
+          "count": 1
+        },
+        {
+          "_id": "jC5CikYXF",
+          "title": "Midi sundress with ruched front",
+          "price": 18.9,
+          "count": 2
+        }
+      ],
+      "createdAt": "2021-11-08T10:26:58.194Z",
+      "updatedAt": "2021-11-08T10:26:58.194Z",
+      "__v": 0
+    },
+    {
+      "_id": "goJIyzd5n",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 33.8,
+      "cartItems": [
+        {
+          "_id": "jC5CikYXF",
+          "title": "Midi sundress with ruched front",
+          "price": 18.9,
+          "count": 1
+        },
+        {
+          "_id": "ffV63oW5c",
+          "title": "Midi dress in pink ditsy floral",
+          "price": 14.9,
+          "count": 1
+        }
+      ],
+      "createdAt": "2021-11-08T16:49:40.819Z",
+      "updatedAt": "2021-11-08T16:49:40.819Z",
+      "__v": 0
+    },
+    {
+      "_id": "5xfiEnqec",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 29.9,
+      "cartItems": [
+        {
+          "_id": "03ECiArpI",
+          "title": "Midi sundress with shirring detail",
+          "price": 29.9,
+          "count": 1
+        }
+      ],
+      "createdAt": "2021-11-08T16:53:04.707Z",
+      "updatedAt": "2021-11-08T16:53:04.707Z",
+      "__v": 0
+    }
   ]
 }
