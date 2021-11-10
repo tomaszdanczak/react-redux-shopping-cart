@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import OrderDetailModal from "./components/organisms/OrderDetailModal";
 import ProductDetailModal from "./components/organisms/ProductDetailModal";
 import AdminPage from "./components/pages/AdminPage";
 import HomePage from "./components/pages/HomePage";
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
       <ProductDetailModal />
+      <OrderDetailModal />
     </MainLayout>
   );
 }

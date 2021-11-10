@@ -198,5 +198,28 @@
     "image": "/images/dress2.jpg",
     "price": "18.9",
     "title": "Midi sundress with ruched front"
+  },
+  "order": {
+    "_id": "kqT6ox40y",
+    "address": "test address 2",
+    "cartItems": [
+      {
+        "_id": "03ECiArpI",
+        "title": "Midi sundress with shirring detail",
+        "price": 29.9,
+        "count": 1
+      },
+      {
+        "_id": "jC5CikYXF",
+        "title": "Midi sundress with ruched front",
+        "price": 18.9,
+        "count": 2
+      }
+    ],
+    "createdAt": "2021-11-10T14:04:50.179Z",
+    "email": "test2@gmail.com",
+    "name": "test2",
+    "total": "67.69999999999999",
+    "updatedAt": "2021-11-10T14:04:50.179Z"
   }
 }
