@@ -48,5 +48,37 @@
       "availableSizes": ["XL", "XXL"],
       "price": 49.9
     }
+  ],
+  "cartItems": [
+    {
+      "_id": "ffV63oW5c",
+      "title": "Midi dress in pink ditsy floral",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/dress3.jpg",
+      "price": 14.9,
+      "availableSizes": ["X", "M", "L"],
+      "__v": 0,
+      "count": 1
+    },
+    {
+      "_id": "jC5CikYXF",
+      "title": "Midi sundress with ruched front",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/dress2.jpg",
+      "price": 18.9,
+      "availableSizes": ["X", "M", "L"],
+      "__v": 0,
+      "count": 1
+    },
+    {
+      "_id": "03ECiArpI",
+      "title": "Midi sundress with shirring detail",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/dress1.jpg",
+      "price": 29.9,
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "__v": 0,
+      "count": 6
+    }
   ]
 }
