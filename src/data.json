@@ -1,0 +1,225 @@
+{
+  "products": [
+    {
+      "_id": "dress1",
+      "image": "/images/dress1.jpg",
+      "title": "Midi sundress with shirring detail",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "price": 29.9
+    },
+    {
+      "_id": "dress2",
+      "image": "/images/dress2.jpg",
+      "title": "Midi sundress with ruched front",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["X", "M", "L"],
+      "price": 18.9
+    },
+    {
+      "_id": "dress3",
+      "image": "/images/dress3.jpg",
+      "title": "Midi dress in pink ditsy floral",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["X", "M", "L"],
+      "price": 14.9
+    },
+    {
+      "_id": "dress4",
+      "image": "/images/dress4.jpg",
+      "title": "cami maxi dress in polka dot",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["XL"],
+      "price": 25.9
+    },
+    {
+      "_id": "dress5",
+      "image": "/images/dress5.jpg",
+      "title": "Frill mini dress in yellow polka dot",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["X", "L", "XL"],
+      "price": 10.9
+    },
+    {
+      "_id": "dress6",
+      "image": "/images/dress6.jpg",
+      "title": "Midi tea dress in blue and red spot",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["XL", "XXL"],
+      "price": 49.9
+    }
+  ],
+  "cartItems": [
+    {
+      "_id": "ffV63oW5c",
+      "title": "Midi dress in pink ditsy floral",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/dress3.jpg",
+      "price": 14.9,
+      "availableSizes": ["X", "M", "L"],
+      "__v": 0,
+      "count": 1
+    },
+    {
+      "_id": "jC5CikYXF",
+      "title": "Midi sundress with ruched front",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/dress2.jpg",
+      "price": 18.9,
+      "availableSizes": ["X", "M", "L"],
+      "__v": 0,
+      "count": 1
+    },
+    {
+      "_id": "03ECiArpI",
+      "title": "Midi sundress with shirring detail",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/dress1.jpg",
+      "price": 29.9,
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "__v": 0,
+      "count": 6
+    }
+  ],
+  "orders": [
+    {
+      "_id": "9jfU907ZM",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 14.9,
+      "cartItems": [
+        {
+          "_id": "ffV63oW5c",
+          "title": "Midi dress in pink ditsy floral",
+          "price": 14.9,
+          "count": 1
+        }
+      ],
+      "createdAt": "2021-11-05T13:38:46.501Z",
+      "updatedAt": "2021-11-05T13:38:46.501Z",
+      "__v": 0
+    },
+    {
+      "_id": "D8YLr7u2Z",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 229.5,
+      "cartItems": [
+        {
+          "_id": "03ECiArpI",
+          "title": "Midi sundress with shirring detail",
+          "price": 29.9,
+          "count": 1
+        },
+        {
+          "_id": "Ts3TQyHNi",
+          "title": "Midi tea dress in blue and red spot",
+          "price": 49.9,
+          "count": 4
+        }
+      ],
+      "createdAt": "2021-11-05T13:52:06.606Z",
+      "updatedAt": "2021-11-05T13:52:06.606Z",
+      "__v": 0
+    },
+    {
+      "_id": "kPqK7WQEr",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 52.699999999999996,
+      "cartItems": [
+        {
+          "_id": "ffV63oW5c",
+          "title": "Midi dress in pink ditsy floral",
+          "price": 14.9,
+          "count": 1
+        },
+        {
+          "_id": "jC5CikYXF",
+          "title": "Midi sundress with ruched front",
+          "price": 18.9,
+          "count": 2
+        }
+      ],
+      "createdAt": "2021-11-08T10:26:58.194Z",
+      "updatedAt": "2021-11-08T10:26:58.194Z",
+      "__v": 0
+    },
+    {
+      "_id": "goJIyzd5n",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 33.8,
+      "cartItems": [
+        {
+          "_id": "jC5CikYXF",
+          "title": "Midi sundress with ruched front",
+          "price": 18.9,
+          "count": 1
+        },
+        {
+          "_id": "ffV63oW5c",
+          "title": "Midi dress in pink ditsy floral",
+          "price": 14.9,
+          "count": 1
+        }
+      ],
+      "createdAt": "2021-11-08T16:49:40.819Z",
+      "updatedAt": "2021-11-08T16:49:40.819Z",
+      "__v": 0
+    },
+    {
+      "_id": "5xfiEnqec",
+      "email": "test@test.com",
+      "name": "test name",
+      "address": "test address",
+      "total": 29.9,
+      "cartItems": [
+        {
+          "_id": "03ECiArpI",
+          "title": "Midi sundress with shirring detail",
+          "price": 29.9,
+          "count": 1
+        }
+      ],
+      "createdAt": "2021-11-08T16:53:04.707Z",
+      "updatedAt": "2021-11-08T16:53:04.707Z",
+      "__v": 0
+    }
+  ],
+  "selectedProduct": {
+    "_id": "jC5CikYXF",
+    "availableSizes": ["X", "M", "L"],
+    "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+    "image": "/images/dress2.jpg",
+    "price": "18.9",
+    "title": "Midi sundress with ruched front"
+  },
+  "order": {
+    "_id": "kqT6ox40y",
+    "address": "test address 2",
+    "cartItems": [
+      {
+        "_id": "03ECiArpI",
+        "title": "Midi sundress with shirring detail",
+        "price": 29.9,
+        "count": 1
+      },
+      {
+        "_id": "jC5CikYXF",
+        "title": "Midi sundress with ruched front",
+        "price": 18.9,
+        "count": 2
+      }
+    ],
+    "createdAt": "2021-11-10T14:04:50.179Z",
+    "email": "test2@gmail.com",
+    "name": "test2",
+    "total": "67.69999999999999",
+    "updatedAt": "2021-11-10T14:04:50.179Z"
+  }
+}
