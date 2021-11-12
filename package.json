@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -15,6 +17,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "server": "nodemon app/index.js",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
