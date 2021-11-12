@@ -5,6 +5,7 @@ const app = express();
 require("./db/mongoose");
 
 // mount routes
+app.use(require("./routes/web.js"));
 app.use(require("./routes/api.js"));
 
 module.exports = app;
