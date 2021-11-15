@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import Button from "../atoms/Button";
 import { formatCurrency } from "../../utils";
-import { showOrderForm } from "../../redux/actions/orderState";
+import { showOrderForm } from "../../redux/actions/orderActions";
 
 export default function ProceedOrder() {
   const dispatch = useDispatch();
