@@ -6,4 +6,7 @@ export const ActionTypes = {
   // cart
   ADD_TO_CART: "ADD_TO_CART",
   REMOVE_FROM_CART: "REMOVE_FROM_CART",
+  // orders
+  CLEAR_ORDER: "CLEAR_ORDER",
+  SHOW_ORDER_FORM: "SHOW_ORDER_FORM",
 };
