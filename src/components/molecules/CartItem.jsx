@@ -1,13 +1,19 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../../redux/actions/cartActions";
+import { hideOrderForm } from "../../redux/actions/orderActions";
 import { formatCurrency } from "../../utils";
 import Button from "../atoms/Button";
 
 export default function CartItem({ cartItem }) {
   const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cartState);
 
   const handleRemoveFromCart = () => {
     dispatch(removeFromCart(cartItem._id));
+
+    if (cartItems.length === 1) {
+      dispatch(hideOrderForm());
+    }
   };
 
   return (

@@ -9,4 +9,5 @@ export const ActionTypes = {
   // orders
   CLEAR_ORDER: "CLEAR_ORDER",
   SHOW_ORDER_FORM: "SHOW_ORDER_FORM",
+  HIDE_ORDER_FORM: "HIDE_ORDER_FORM",
 };

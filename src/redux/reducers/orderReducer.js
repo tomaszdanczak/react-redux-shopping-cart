@@ -13,6 +13,11 @@ export const orderReducer = (state = initialState, { type, payload }) => {
 
     //======================================================================
 
+    case ActionTypes.HIDE_ORDER_FORM:
+      return { ...state, isOrderFormOpen: false };
+
+    //======================================================================
+
     default:
       return state;
   }
