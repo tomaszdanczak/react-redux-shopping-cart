@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux";
 import Button from "../atoms/Button";
 import { formatCurrency } from "../../utils";
-import { cartItems } from "./../../data.json";
 
 export default function ProceedOrder() {
+  const cartItems = useSelector((state) => state.cartState);
+
   return (
     <div className="flex justify-between mt-8">
       <p className="text-lg">
