@@ -12,14 +12,28 @@ export default function Products() {
     dispatch(featchProducts());
   }, [dispatch]);
 
-  return (
-    <div className="col-span-5 ml-4">
-      <FilterSection />
+  const renderProducts = () => {
+    if (products === -1) {
+      return <h2>Loading...</h2>;
+    }
+
+    if (products.length === 0) {
+      return <h2>{`There are no products`}</h2>;
+    }
+
+    return (
       <ul className="grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-3">
         {products.map((product) => (
           <Product product={product} key={product._id} />
         ))}
       </ul>
+    );
+  };
+
+  return (
+    <div className="col-span-5 ml-4">
+      <FilterSection />
+      {renderProducts()}
     </div>
   );
 }
