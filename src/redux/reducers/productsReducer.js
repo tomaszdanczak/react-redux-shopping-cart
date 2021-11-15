@@ -2,6 +2,8 @@ import { ActionTypes } from "../constants/action-types";
 
 const initialState = {
   products: -1,
+  filtredProducts: -1,
+  size: "",
   sort: "latest",
 };
 
@@ -10,12 +12,12 @@ export const productsReducer = (state = initialState, { type, payload }) => {
     //======================================================================
 
     case ActionTypes.FETCH_ALL_PRODUCTS:
-      return { ...state, products: payload };
+      return { ...state, products: payload, filtredProducts: payload };
 
     //======================================================================
 
     case ActionTypes.ORDER_PRODUCTS_BY_PRICE:
-      const sortedItems = [...state.products];
+      const sortedItems = [...state.filtredProducts];
 
       if (payload.sort === "latest") {
         sortedItems.sort((a, b) => {
@@ -31,7 +33,19 @@ export const productsReducer = (state = initialState, { type, payload }) => {
         });
       }
 
-      return { ...state, sort: payload.sort, products: sortedItems };
+      return { ...state, sort: payload.sort, filtredProducts: sortedItems };
+
+    //======================================================================
+
+    case ActionTypes.FILTER_PRODUCTS_BY_SIZE:
+      const filtredProducts =
+        payload.size === ""
+          ? [...state.products]
+          : state.products.filter(
+              (x) => x.availableSizes.indexOf(payload.size) >= 0
+            );
+
+      return { ...state, size: payload.size, filtredProducts };
 
     //======================================================================
 

@@ -1,8 +1,19 @@
+import { useDispatch, useSelector } from "react-redux";
+import { filterProducts } from "../../redux/actions/productsActions";
+
 export default function SelectFilter() {
+  const value = useSelector((state) => state.productsState.size);
+
+  const dispatch = useDispatch();
+
+  const handleChangeValue = (e) => {
+    dispatch(filterProducts(e.target.value));
+  };
+
   return (
     <p>
       Filter
-      <select>
+      <select value={value} onChange={handleChangeValue}>
         <option value="">ALL</option>
         <option value="XS">XS</option>
         <option value="S">S</option>

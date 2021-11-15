@@ -22,3 +22,10 @@ export const sortProducts = (sort) => {
 };
 
 //======================================================================
+
+export const filterProducts = (size) => {
+  return {
+    type: ActionTypes.FILTER_PRODUCTS_BY_SIZE,
+    payload: { size },
+  };
+};

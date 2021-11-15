@@ -12,8 +12,6 @@ export const addToCart = (product) => {
 //======================================================================
 
 export const removeFromCart = (productId) => {
-  console.log("poszło");
-
   return {
     type: ActionTypes.REMOVE_FROM_CART,
     payload: { productId },
