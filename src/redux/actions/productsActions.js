@@ -13,3 +13,12 @@ export const featchProducts = () => async (dispatch) => {
 };
 
 //======================================================================
+
+export const sortProducts = (sort) => {
+  return {
+    type: ActionTypes.ORDER_PRODUCTS_BY_PRICE,
+    payload: { sort },
+  };
+};
+
+//======================================================================
