@@ -1,8 +1,9 @@
+import { useSelector } from "react-redux";
 import SelectFilter from "../atoms/SelectFilter";
 import SelectOrder from "../atoms/SelectOrder";
-import { products } from "./../../data.json";
 
 export default function FilterSection() {
+  const { products } = useSelector((state) => state.productsState);
   const count = products.length;
 
   return (
