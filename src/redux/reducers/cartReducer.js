@@ -1,11 +1,12 @@
 import { ActionTypes } from "../constants/action-types";
 
 export const cartReducer = (state = [], { type, payload }) => {
+  let newCartItems = [];
+
   switch (type) {
     //======================================================================
-    case ActionTypes.ADD_TO_CART:
-      let newCartItems = [];
 
+    case ActionTypes.ADD_TO_CART:
       newCartItems = [...state];
       let alreadyInCart = false;
 
@@ -19,6 +20,15 @@ export const cartReducer = (state = [], { type, payload }) => {
       if (!alreadyInCart) {
         newCartItems = [...state, { ...payload.product, count: 1 }];
       }
+
+      return [...newCartItems];
+
+    //======================================================================
+
+    case ActionTypes.REMOVE_FROM_CART:
+      newCartItems = state.filter(
+        (cartItem) => cartItem._id !== payload.productId
+      );
 
       return [...newCartItems];
 
