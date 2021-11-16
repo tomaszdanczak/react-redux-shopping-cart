@@ -3,6 +3,7 @@ import Modal from "../templates/Modal";
 import { formatCurrency } from "../../utils";
 import Button from "../atoms/Button";
 import { hideProductDetail } from "../../redux/actions/productsActions";
+import { addToCart } from "../../redux/actions/cartActions";
 
 export default function ProductDetailModal() {
   const dispatch = useDispatch();
@@ -11,6 +12,11 @@ export default function ProductDetailModal() {
   );
 
   const handleCloseModal = () => {
+    dispatch(hideProductDetail());
+  };
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(selectedProduct));
     dispatch(hideProductDetail());
   };
 
@@ -48,6 +54,7 @@ export default function ProductDetailModal() {
               {formatCurrency(selectedProduct.price)}
             </div>
             <Button
+              onClick={handleAddToCart}
               text="Add to Cart"
               customStyle="w-6/12 py-1 tracking-wider bg-yellow-300 border border-gray-900 hover:bg-yellow-400 active:bg-yellow-200"
             />
