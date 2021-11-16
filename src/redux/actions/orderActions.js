@@ -51,3 +51,14 @@ export const clearOrder = () => {
     type: ActionTypes.CLEAR_ORDER,
   };
 };
+
+//======================================================================
+
+export const fetchOrders = () => async (dispatch) => {
+  const { data } = await axios.get("/api/orders");
+
+  dispatch({
+    type: ActionTypes.FETCH_ORDERS,
+    payload: data,
+  });
+};

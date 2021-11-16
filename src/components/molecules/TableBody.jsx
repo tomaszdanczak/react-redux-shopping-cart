@@ -1,11 +1,13 @@
+import { useSelector } from "react-redux";
 import TableData from "../atoms/TableData";
-import { orders } from "./../../data.json";
 import { formatCurrency } from "../../utils";
 
 export default function TableBody() {
+  const { fetchedOrders } = useSelector((state) => state.orderState);
+
   return (
     <tbody>
-      {orders.map((order) => (
+      {fetchedOrders.map((order) => (
         <tr key={order._id} className="odd:bg-gray-200 even:bg-gray-100">
           <TableData>{order._id}</TableData>
           <TableData>{order.createdAt}</TableData>

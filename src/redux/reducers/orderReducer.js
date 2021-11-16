@@ -4,6 +4,7 @@ const initialState = {
   order: {},
   isOrderFormOpen: false,
   isOrderDetailOpen: false,
+  fetchedOrders: -1,
 };
 
 export const orderReducer = (state = initialState, { type, payload }) => {
@@ -37,6 +38,11 @@ export const orderReducer = (state = initialState, { type, payload }) => {
 
     case ActionTypes.CLEAR_ORDER:
       return { ...state, order: {} };
+
+    //======================================================================
+
+    case ActionTypes.FETCH_ORDERS:
+      return { ...state, fetchedOrders: payload };
 
     //======================================================================
 
