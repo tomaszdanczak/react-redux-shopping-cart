@@ -55,6 +55,15 @@ export const productsReducer = (state = initialState, { type, payload }) => {
 
     //======================================================================
 
+    case ActionTypes.HIDE_PRODUCT_DETAIL:
+      return {
+        ...state,
+        isProductSelected: false,
+        selectedProduct: {},
+      };
+
+    //======================================================================
+
     default:
       return state;
   }

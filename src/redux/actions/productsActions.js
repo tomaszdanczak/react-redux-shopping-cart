@@ -38,3 +38,11 @@ export const showProductDetail = (product) => {
     payload: product,
   };
 };
+
+//======================================================================
+
+export const hideProductDetail = () => {
+  return {
+    type: ActionTypes.HIDE_PRODUCT_DETAIL,
+  };
+};
