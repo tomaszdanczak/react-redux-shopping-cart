@@ -1,11 +1,14 @@
+import { useSelector } from "react-redux";
 import Modal from "../templates/Modal";
 import { selectedProduct } from "./../../data.json";
 import { formatCurrency } from "../../utils";
 import Button from "../atoms/Button";
 
 export default function ProductDetailModal() {
+  const { isProductSelected } = useSelector((state) => state.productsState);
+
   return (
-    <Modal isOpen={false} onCloseModal={""}>
+    <Modal isOpen={isProductSelected} onCloseModal={""}>
       <div className="grid grid-cols-12 gap-8">
         <img
           className="col-span-5"

@@ -29,3 +29,12 @@ export const filterProducts = (size) => {
     payload: { size },
   };
 };
+
+//======================================================================
+
+export const showProductDetail = (product) => {
+  return {
+    type: ActionTypes.SHOW_PRODUCT_DETAIL,
+    payload: product,
+  };
+};

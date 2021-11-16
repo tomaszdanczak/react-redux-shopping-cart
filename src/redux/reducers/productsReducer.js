@@ -5,6 +5,7 @@ const initialState = {
   filtredProducts: -1,
   size: "",
   sort: "latest",
+  isProductSelected: false,
 };
 
 export const productsReducer = (state = initialState, { type, payload }) => {
@@ -46,6 +47,11 @@ export const productsReducer = (state = initialState, { type, payload }) => {
             );
 
       return { ...state, size: payload.size, filtredProducts };
+
+    //======================================================================
+
+    case ActionTypes.SHOW_PRODUCT_DETAIL:
+      return { ...state, isProductSelected: true, selectedProduct: payload };
 
     //======================================================================
 
