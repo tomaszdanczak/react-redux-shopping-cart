@@ -35,3 +35,11 @@ export const showOrderDetail = () => {
     type: ActionTypes.SHOW_ORDER_DETAIL,
   };
 };
+
+//======================================================================
+
+export const hideOrderDetail = () => {
+  return {
+    type: ActionTypes.HIDE_ORDER_DETAIL,
+  };
+};

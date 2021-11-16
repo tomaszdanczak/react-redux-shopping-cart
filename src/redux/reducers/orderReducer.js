@@ -30,6 +30,11 @@ export const orderReducer = (state = initialState, { type, payload }) => {
 
     //======================================================================
 
+    case ActionTypes.HIDE_ORDER_DETAIL:
+      return { ...state, isOrderDetailOpen: false };
+
+    //======================================================================
+
     default:
       return state;
   }

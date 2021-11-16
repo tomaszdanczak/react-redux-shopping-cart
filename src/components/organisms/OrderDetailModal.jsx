@@ -1,14 +1,20 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import OrderListItem from "../molecules/OrderListItem";
 import Modal from "../templates/Modal";
 import { order } from "./../../data.json";
 import { formatCurrency } from "../../utils";
+import { hideOrderDetail } from "../../redux/actions/orderActions";
 
 export default function OrderDetailModal() {
+  const dispatch = useDispatch();
   const { isOrderDetailOpen } = useSelector((state) => state.orderState);
 
+  const handleCloseModal = () => {
+    dispatch(hideOrderDetail());
+  };
+
   return (
-    <Modal isOpen={isOrderDetailOpen} onCloseModal={""}>
+    <Modal isOpen={isOrderDetailOpen} onCloseModal={handleCloseModal}>
       <div className="flex flex-col justify-center items-center h-full">
         <h3 className="text-green-500">Your order has been placed.</h3>
         <h2 className="text-2xl m-4">Order {order._id}</h2>
