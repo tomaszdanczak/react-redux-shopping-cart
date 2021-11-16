@@ -6,6 +6,7 @@ const initialState = {
   size: "",
   sort: "latest",
   isProductSelected: false,
+  selectedProduct: {},
 };
 
 export const productsReducer = (state = initialState, { type, payload }) => {

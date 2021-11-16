@@ -1,17 +1,22 @@
 import { useDispatch, useSelector } from "react-redux";
 import Modal from "../templates/Modal";
-import { selectedProduct } from "./../../data.json";
 import { formatCurrency } from "../../utils";
 import Button from "../atoms/Button";
 import { hideProductDetail } from "../../redux/actions/productsActions";
 
 export default function ProductDetailModal() {
   const dispatch = useDispatch();
-  const { isProductSelected } = useSelector((state) => state.productsState);
+  const { isProductSelected, selectedProduct } = useSelector(
+    (state) => state.productsState
+  );
 
   const handleCloseModal = () => {
     dispatch(hideProductDetail());
   };
+
+  if (Object.keys(selectedProduct).length === 0) {
+    return null;
+  }
 
   return (
     <Modal isOpen={isProductSelected} onCloseModal={handleCloseModal}>
