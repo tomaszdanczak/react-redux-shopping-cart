@@ -43,3 +43,11 @@ export const hideOrderDetail = () => {
     type: ActionTypes.HIDE_ORDER_DETAIL,
   };
 };
+
+//======================================================================
+
+export const clearOrder = () => {
+  return {
+    type: ActionTypes.CLEAR_ORDER,
+  };
+};

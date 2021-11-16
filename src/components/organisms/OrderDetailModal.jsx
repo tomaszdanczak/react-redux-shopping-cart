@@ -3,7 +3,7 @@ import OrderListItem from "../molecules/OrderListItem";
 import Modal from "../templates/Modal";
 import { order } from "./../../data.json";
 import { formatCurrency } from "../../utils";
-import { hideOrderDetail } from "../../redux/actions/orderActions";
+import { clearOrder, hideOrderDetail } from "../../redux/actions/orderActions";
 
 export default function OrderDetailModal() {
   const dispatch = useDispatch();
@@ -11,6 +11,7 @@ export default function OrderDetailModal() {
 
   const handleCloseModal = () => {
     dispatch(hideOrderDetail());
+    dispatch(clearOrder());
   };
 
   return (

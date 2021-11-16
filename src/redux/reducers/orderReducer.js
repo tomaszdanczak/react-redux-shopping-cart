@@ -35,6 +35,11 @@ export const orderReducer = (state = initialState, { type, payload }) => {
 
     //======================================================================
 
+    case ActionTypes.CLEAR_ORDER:
+      return { ...state, order: {} };
+
+    //======================================================================
+
     default:
       return state;
   }
