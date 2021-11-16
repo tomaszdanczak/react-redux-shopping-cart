@@ -1,7 +1,21 @@
+import { useDispatch, useSelector } from "react-redux";
+import { removeFromCart } from "../../redux/actions/cartActions";
+import { hideOrderForm } from "../../redux/actions/orderActions";
 import { formatCurrency } from "../../utils";
 import Button from "../atoms/Button";
 
 export default function CartItem({ cartItem }) {
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cartState);
+
+  const handleRemoveFromCart = () => {
+    dispatch(removeFromCart(cartItem._id));
+
+    if (cartItems.length === 1) {
+      dispatch(hideOrderForm());
+    }
+  };
+
   return (
     <li className="col-span-2 flex mb-4 pb-2 border-b relative animate-fade-in">
       <div className="w-14 flex-shrink-0">
@@ -14,6 +28,7 @@ export default function CartItem({ cartItem }) {
             {formatCurrency(cartItem.price)} x {cartItem.count}
           </span>
           <Button
+            onClick={handleRemoveFromCart}
             text="Remove"
             customStyle="border px-2 tracking-wider text-gray-900 text-sm border-gray-900 bg-gray-200  transform transition hover:bg-gray-300  active:bg-gray-400 lg:text-sm"
           />

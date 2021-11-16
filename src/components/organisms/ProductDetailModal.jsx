@@ -1,11 +1,31 @@
+import { useDispatch, useSelector } from "react-redux";
 import Modal from "../templates/Modal";
-import { selectedProduct } from "./../../data.json";
 import { formatCurrency } from "../../utils";
 import Button from "../atoms/Button";
+import { hideProductDetail } from "../../redux/actions/productsActions";
+import { addToCart } from "../../redux/actions/cartActions";
 
 export default function ProductDetailModal() {
+  const dispatch = useDispatch();
+  const { isProductSelected, selectedProduct } = useSelector(
+    (state) => state.productsState
+  );
+
+  const handleCloseModal = () => {
+    dispatch(hideProductDetail());
+  };
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(selectedProduct));
+    dispatch(hideProductDetail());
+  };
+
+  if (Object.keys(selectedProduct).length === 0) {
+    return null;
+  }
+
   return (
-    <Modal isOpen={false} onCloseModal={""}>
+    <Modal isOpen={isProductSelected} onCloseModal={handleCloseModal}>
       <div className="grid grid-cols-12 gap-8">
         <img
           className="col-span-5"
@@ -34,6 +54,7 @@ export default function ProductDetailModal() {
               {formatCurrency(selectedProduct.price)}
             </div>
             <Button
+              onClick={handleAddToCart}
               text="Add to Cart"
               customStyle="w-6/12 py-1 tracking-wider bg-yellow-300 border border-gray-900 hover:bg-yellow-400 active:bg-yellow-200"
             />
