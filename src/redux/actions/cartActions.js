@@ -19,3 +19,11 @@ export const removeFromCart = (productId) => {
 };
 
 //======================================================================
+
+export const clearCart = () => {
+  return {
+    type: ActionTypes.CLEAR_CART,
+  };
+};
+
+//======================================================================

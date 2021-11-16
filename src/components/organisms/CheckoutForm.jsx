@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Button from "../atoms/Button";
 import FormControl from "../molecules/FormControl";
 import { createOrder } from "../../redux/actions/orderActions";
+import { clearCart } from "../../redux/actions/cartActions";
 
 export default function CheckoutForm() {
   const [form, setForm] = useState({ email: "", name: "", address: "" });
@@ -23,6 +24,7 @@ export default function CheckoutForm() {
     };
 
     dispatch(createOrder(order));
+    dispatch(clearCart());
   };
 
   return (
