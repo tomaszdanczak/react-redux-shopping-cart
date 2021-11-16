@@ -2,7 +2,11 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Button from "../atoms/Button";
 import FormControl from "../molecules/FormControl";
-import { createOrder, hideOrderForm } from "../../redux/actions/orderActions";
+import {
+  createOrder,
+  hideOrderForm,
+  showOrderDetail,
+} from "../../redux/actions/orderActions";
 import { clearCart } from "../../redux/actions/cartActions";
 
 export default function CheckoutForm() {
@@ -26,6 +30,7 @@ export default function CheckoutForm() {
     dispatch(createOrder(order));
     dispatch(clearCart());
     dispatch(hideOrderForm());
+    dispatch(showOrderDetail());
   };
 
   return (

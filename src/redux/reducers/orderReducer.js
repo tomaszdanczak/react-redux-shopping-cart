@@ -3,6 +3,7 @@ import { ActionTypes } from "../constants/action-types";
 const initialState = {
   order: {},
   isOrderFormOpen: false,
+  isOrderDetailOpen: false,
 };
 
 export const orderReducer = (state = initialState, { type, payload }) => {
@@ -21,6 +22,11 @@ export const orderReducer = (state = initialState, { type, payload }) => {
 
     case ActionTypes.CREATE_ORDER:
       return { ...state, order: payload };
+
+    //======================================================================
+
+    case ActionTypes.SHOW_ORDER_DETAIL:
+      return { ...state, isOrderDetailOpen: true };
 
     //======================================================================
 

@@ -18,6 +18,7 @@ export const hideOrderForm = () => {
 };
 
 //======================================================================
+
 export const createOrder = (order) => async (dispatch) => {
   const { data } = await axios.post("/api/orders", order);
 
@@ -25,4 +26,12 @@ export const createOrder = (order) => async (dispatch) => {
     type: ActionTypes.CREATE_ORDER,
     payload: data,
   });
+};
+
+//======================================================================
+
+export const showOrderDetail = () => {
+  return {
+    type: ActionTypes.SHOW_ORDER_DETAIL,
+  };
 };
